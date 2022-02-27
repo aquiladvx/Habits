@@ -30,17 +30,16 @@ struct SignInView: View {
                             VStack(alignment: .center, spacing: 8) {
                                 logo
                                 title
-                                CustomTextField(text: "Email", binding: $email, capitalization: .never)
-                                CustomPasswordField(text: "Password", binding: $password).padding(.bottom, 20)
-                                CustomButton(title: "Sign In") {
-                                    viewModel.login(email: email, password: password)
-                                }
+                                emailField
+                                passwordField
+                                signInButton
                                 registerLink
                             }
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .padding(.horizontal, 16)
-                        .navigationBarTitle("Login", displayMode: .automatic)
+                        .navigationBarTitle("Login",
+                                            displayMode: .automatic)
                         .navigationBarHidden(navigationHidden)
                         
                         if case SignInUIState.FAILURE(let message) = viewModel.uiState {
@@ -69,10 +68,24 @@ extension SignInView {
     }
     
     var title: some View {
-        Text("Login")
-            .foregroundColor(Color.black)
-            .font(Font.system(.title).bold())
+        CustomTitle(text: "Login")
             .padding(.bottom, 8)
+    }
+    
+    var emailField: some View {
+        CustomTextField(text: "Email", binding: $email, capitalization: .never,errorMessage: "Invalid Email" ,failure: !email.isEmail(),
+                        keyboard: .emailAddress)
+    }
+    
+    var passwordField: some View {
+        CustomTextField(text: "Password", binding: $password, capitalization: .never, errorMessage: "your password must be at least 8 characters long", failure: password.count < 8, isSecure: true)
+            .padding(.bottom, 20)
+    }
+        
+    var signInButton: some View {
+        CustomButton(text: "Sign In", showProgress: viewModel.uiState == SignInUIState.LOADING, disabled: !email.isEmail() || password.count < 8) {
+            viewModel.login(email: email, password: password)
+        }
     }
     
     var registerLink: some View {
@@ -103,6 +116,9 @@ extension SignInView {
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         let viewModel = SignInViewModel()
-        SignInView(viewModel: viewModel)
+        ForEach(ColorScheme.allCases, id: \.self) { value in
+            SignInView(viewModel: viewModel)
+                .preferredColorScheme(value)
+        }
     }
 }

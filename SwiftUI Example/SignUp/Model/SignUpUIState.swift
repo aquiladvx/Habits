@@ -1,15 +1,15 @@
 //
-//  SignInUIState.swift
+//  SignUpUIState.swift
 //  SwiftUI Example
 //
-//  Created by Davi Aquila on 2022-02-26.
+//  Created by Davi Aquila on 2022-02-27.
 //
 
 import Foundation
 
-enum SignInUIState: Equatable {
+enum SignUpUIState {
     case NONE
     case LOADING
-    case GO_TO_HOME
+    case SUCCESS
     case FAILURE(errorMessage: String)
 }

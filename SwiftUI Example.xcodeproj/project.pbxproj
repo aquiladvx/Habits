@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D38DE3827CAC28F00AC8768 /* HabitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38DE3727CAC28F00AC8768 /* HabitsApp.swift */; };
+		3D38DE3827CAC28F00AC8768 /* SwiftUIExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38DE3727CAC28F00AC8768 /* SwiftUIExampleApp.swift */; };
 		3D38DE3C27CAC29000AC8768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D38DE3B27CAC29000AC8768 /* Assets.xcassets */; };
 		3D38DE3F27CAC29000AC8768 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D38DE3E27CAC29000AC8768 /* Preview Assets.xcassets */; };
 		3D67EFAA27CB09E9005991F7 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67EFA927CB09E9005991F7 /* SignInView.swift */; };
@@ -20,6 +20,9 @@
 		3D67EFBE27CB3B6E005991F7 /* SignInViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67EFBD27CB3B6E005991F7 /* SignInViewRouter.swift */; };
 		3D67EFC427CB3E14005991F7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67EFC327CB3E14005991F7 /* SignUpView.swift */; };
 		3D67EFC627CB3E30005991F7 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67EFC527CB3E30005991F7 /* SignUpViewModel.swift */; };
+		3D9A147A27CBCB6000A1C630 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A147927CBCB6000A1C630 /* Utils.swift */; };
+		3D9A147C27CBD0FB00A1C630 /* SignUpUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A147B27CBD0FB00A1C630 /* SignUpUIState.swift */; };
+		3D9A148227CBE53A00A1C630 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A148127CBE53A00A1C630 /* String+Extension.swift */; };
 		3DC7D51A27CAC8C0009BAB94 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7D51927CAC8C0009BAB94 /* SplashView.swift */; };
 		3DC7D51C27CAC95B009BAB94 /* SplashUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7D51B27CAC95B009BAB94 /* SplashUIState.swift */; };
 		3DC7D51F27CAD641009BAB94 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7D51E27CAD641009BAB94 /* SplashViewModel.swift */; };
@@ -27,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		3D38DE3427CAC28F00AC8768 /* SwiftUI Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D38DE3727CAC28F00AC8768 /* HabitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsApp.swift; sourceTree = "<group>"; };
+		3D38DE3727CAC28F00AC8768 /* SwiftUIExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExampleApp.swift; sourceTree = "<group>"; };
 		3D38DE3B27CAC29000AC8768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D38DE3E27CAC29000AC8768 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D67EFA927CB09E9005991F7 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -40,6 +43,9 @@
 		3D67EFBD27CB3B6E005991F7 /* SignInViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewRouter.swift; sourceTree = "<group>"; };
 		3D67EFC327CB3E14005991F7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3D67EFC527CB3E30005991F7 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		3D9A147927CBCB6000A1C630 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3D9A147B27CBD0FB00A1C630 /* SignUpUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUIState.swift; sourceTree = "<group>"; };
+		3D9A148127CBE53A00A1C630 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		3DC7D51927CAC8C0009BAB94 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		3DC7D51B27CAC95B009BAB94 /* SplashUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUIState.swift; sourceTree = "<group>"; };
 		3DC7D51E27CAD641009BAB94 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
@@ -75,12 +81,12 @@
 		3D38DE3627CAC28F00AC8768 /* SwiftUI Example */ = {
 			isa = PBXGroup;
 			children = (
+				3D67EFB827CB203D005991F7 /* Common */,
 				3D67EFBF27CB3DF1005991F7 /* SignUp */,
-				3D67EFB827CB203D005991F7 /* Core */,
 				3D67EFAF27CB0C48005991F7 /* Home */,
 				3D67EFA427CB098A005991F7 /* SignIn */,
 				3DC7D51627CAC8A9009BAB94 /* Splash */,
-				3D38DE3727CAC28F00AC8768 /* HabitsApp.swift */,
+				3D38DE3727CAC28F00AC8768 /* SwiftUIExampleApp.swift */,
 				3D38DE3B27CAC29000AC8768 /* Assets.xcassets */,
 				3D38DE3D27CAC29000AC8768 /* Preview Content */,
 			);
@@ -163,12 +169,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3D67EFB827CB203D005991F7 /* Core */ = {
+		3D67EFB827CB203D005991F7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3D67EFB927CB2065005991F7 /* CustomComponents.swift */,
+				3D9A148027CBE52E00A1C630 /* Lang */,
+				3D9A147F27CBE2B400A1C630 /* View */,
+				3D9A147927CBCB6000A1C630 /* Utils.swift */,
 			);
-			path = Core;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		3D67EFBF27CB3DF1005991F7 /* SignUp */ = {
@@ -200,8 +208,25 @@
 		3D67EFC227CB3E08005991F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3D9A147B27CBD0FB00A1C630 /* SignUpUIState.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3D9A147F27CBE2B400A1C630 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D67EFB927CB2065005991F7 /* CustomComponents.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D9A148027CBE52E00A1C630 /* Lang */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A148127CBE53A00A1C630 /* String+Extension.swift */,
+			);
+			path = Lang;
 			sourceTree = "<group>";
 		};
 		3DC7D51627CAC8A9009BAB94 /* Splash */ = {
@@ -311,10 +336,13 @@
 			files = (
 				3DC7D51C27CAC95B009BAB94 /* SplashUIState.swift in Sources */,
 				3D67EFB727CB0CD2005991F7 /* HomeViewModel.swift in Sources */,
-				3D38DE3827CAC28F00AC8768 /* HabitsApp.swift in Sources */,
+				3D38DE3827CAC28F00AC8768 /* SwiftUIExampleApp.swift in Sources */,
+				3D9A147C27CBD0FB00A1C630 /* SignUpUIState.swift in Sources */,
 				3D67EFAC27CB0A03005991F7 /* SignInViewModel.swift in Sources */,
 				3DC7D51A27CAC8C0009BAB94 /* SplashView.swift in Sources */,
+				3D9A147A27CBCB6000A1C630 /* Utils.swift in Sources */,
 				3DC7D51F27CAD641009BAB94 /* SplashViewModel.swift in Sources */,
+				3D9A148227CBE53A00A1C630 /* String+Extension.swift in Sources */,
 				3D67EFC627CB3E30005991F7 /* SignUpViewModel.swift in Sources */,
 				3D67EFB427CB0C78005991F7 /* HomeView.swift in Sources */,
 				3D67EFBC27CB35D7005991F7 /* SignInUIState.swift in Sources */,
