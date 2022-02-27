@@ -17,9 +17,9 @@ struct SplashView: View {
                 case .LOADING:
                     loadingView()
                 case .GO_TO_SIGNIN:
-                    Text("go to signin")
+                    viewModel.goToSignIn()
                 case .GO_TO_HOME:
-                    Text("go to home")
+                    viewModel.goToHome()
                 case .FAILURE(let errorMessage):
                     loadingView(error: errorMessage)
             }
@@ -41,7 +41,7 @@ extension SplashView {
                 if let error = error {
                     Text("")
                         .alert(isPresented: .constant(true)) {
-                            Alert(title: Text("Habits"), message: Text(error), dismissButton: .default(Text("Ok")) {
+                            Alert(title: Text("Alert"), message: Text(error), dismissButton: .default(Text("Ok")) {
                                 //TODO somethings happens after error
                             })
                         }

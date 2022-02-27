@@ -5,7 +5,7 @@
 //  Created by Davi Aquila on 2022-02-26.
 //
 
-import Foundation
+import SwiftUI
 
 enum SplashUIState {
     case LOADING
