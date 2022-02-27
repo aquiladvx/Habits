@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		3D38DE3827CAC28F00AC8768 /* HabitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38DE3727CAC28F00AC8768 /* HabitsApp.swift */; };
-		3D38DE3A27CAC28F00AC8768 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38DE3927CAC28F00AC8768 /* ContentView.swift */; };
 		3D38DE3C27CAC29000AC8768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D38DE3B27CAC29000AC8768 /* Assets.xcassets */; };
 		3D38DE3F27CAC29000AC8768 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D38DE3E27CAC29000AC8768 /* Preview Assets.xcassets */; };
+		3DC7D51A27CAC8C0009BAB94 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7D51927CAC8C0009BAB94 /* SplashView.swift */; };
+		3DC7D51C27CAC95B009BAB94 /* SplashUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7D51B27CAC95B009BAB94 /* SplashUIState.swift */; };
+		3DC7D51F27CAD641009BAB94 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7D51E27CAD641009BAB94 /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D38DE3427CAC28F00AC8768 /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D38DE3427CAC28F00AC8768 /* SwiftUI Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D38DE3727CAC28F00AC8768 /* HabitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsApp.swift; sourceTree = "<group>"; };
-		3D38DE3927CAC28F00AC8768 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D38DE3B27CAC29000AC8768 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D38DE3E27CAC29000AC8768 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3DC7D51927CAC8C0009BAB94 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		3DC7D51B27CAC95B009BAB94 /* SplashUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUIState.swift; sourceTree = "<group>"; };
+		3DC7D51E27CAD641009BAB94 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,7 @@
 		3D38DE2B27CAC28F00AC8768 = {
 			isa = PBXGroup;
 			children = (
-				3D38DE3627CAC28F00AC8768 /* Habits */,
+				3D38DE3627CAC28F00AC8768 /* SwiftUI Example */,
 				3D38DE3527CAC28F00AC8768 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +47,20 @@
 		3D38DE3527CAC28F00AC8768 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D38DE3427CAC28F00AC8768 /* Habits.app */,
+				3D38DE3427CAC28F00AC8768 /* SwiftUI Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3D38DE3627CAC28F00AC8768 /* Habits */ = {
+		3D38DE3627CAC28F00AC8768 /* SwiftUI Example */ = {
 			isa = PBXGroup;
 			children = (
+				3DC7D51627CAC8A9009BAB94 /* Splash */,
 				3D38DE3727CAC28F00AC8768 /* HabitsApp.swift */,
-				3D38DE3927CAC28F00AC8768 /* ContentView.swift */,
 				3D38DE3B27CAC29000AC8768 /* Assets.xcassets */,
 				3D38DE3D27CAC29000AC8768 /* Preview Content */,
 			);
-			path = Habits;
+			path = "SwiftUI Example";
 			sourceTree = "<group>";
 		};
 		3D38DE3D27CAC29000AC8768 /* Preview Content */ = {
@@ -67,12 +71,46 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3DC7D51627CAC8A9009BAB94 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				3DC7D51D27CAD628009BAB94 /* ViewModel */,
+				3DC7D51827CAC8B1009BAB94 /* Model */,
+				3DC7D51727CAC8AD009BAB94 /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		3DC7D51727CAC8AD009BAB94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DC7D51927CAC8C0009BAB94 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DC7D51827CAC8B1009BAB94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DC7D51B27CAC95B009BAB94 /* SplashUIState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DC7D51D27CAD628009BAB94 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3DC7D51E27CAD641009BAB94 /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D38DE3327CAC28F00AC8768 /* Habits */ = {
+		3D38DE3327CAC28F00AC8768 /* SwiftUI Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D38DE4227CAC29000AC8768 /* Build configuration list for PBXNativeTarget "Habits" */;
+			buildConfigurationList = 3D38DE4227CAC29000AC8768 /* Build configuration list for PBXNativeTarget "SwiftUI Example" */;
 			buildPhases = (
 				3D38DE3027CAC28F00AC8768 /* Sources */,
 				3D38DE3127CAC28F00AC8768 /* Frameworks */,
@@ -82,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = Habits;
+			name = "SwiftUI Example";
 			productName = Habits;
-			productReference = 3D38DE3427CAC28F00AC8768 /* Habits.app */;
+			productReference = 3D38DE3427CAC28F00AC8768 /* SwiftUI Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +140,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3D38DE2F27CAC28F00AC8768 /* Build configuration list for PBXProject "Habits" */;
+			buildConfigurationList = 3D38DE2F27CAC28F00AC8768 /* Build configuration list for PBXProject "SwiftUI Example" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +153,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D38DE3327CAC28F00AC8768 /* Habits */,
+				3D38DE3327CAC28F00AC8768 /* SwiftUI Example */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D38DE3A27CAC28F00AC8768 /* ContentView.swift in Sources */,
+				3DC7D51C27CAC95B009BAB94 /* SplashUIState.swift in Sources */,
 				3D38DE3827CAC28F00AC8768 /* HabitsApp.swift in Sources */,
+				3DC7D51A27CAC8C0009BAB94 /* SplashView.swift in Sources */,
+				3DC7D51F27CAD641009BAB94 /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +323,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.aquiladvx.Habits;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SwiftUI Example";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +352,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.aquiladvx.Habits;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SwiftUI Example";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +362,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D38DE2F27CAC28F00AC8768 /* Build configuration list for PBXProject "Habits" */ = {
+		3D38DE2F27CAC28F00AC8768 /* Build configuration list for PBXProject "SwiftUI Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D38DE4027CAC29000AC8768 /* Debug */,
@@ -331,7 +371,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D38DE4227CAC29000AC8768 /* Build configuration list for PBXNativeTarget "Habits" */ = {
+		3D38DE4227CAC29000AC8768 /* Build configuration list for PBXNativeTarget "SwiftUI Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D38DE4327CAC29000AC8768 /* Debug */,
