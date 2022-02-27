@@ -32,6 +32,7 @@ extension SplashView {
         return AnyView(
             ZStack {
                 Image("Logo")
+                    .resizable()
                     .scaledToFit()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .padding(20)

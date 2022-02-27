@@ -9,4 +9,23 @@ import SwiftUI
 
 class SignInViewModel: ObservableObject {
     
+    @Published var uiState: SignInUIState = .NONE
+    
+    func login(email: String, password: String) {
+        self.uiState = .LOADING
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+//            self.uiState = .FAILURE(errorMessage: "The email or password you’ve entered is incorrect")
+            self.uiState = .GO_TO_HOME
+        }
+    }
+}
+
+extension SignInViewModel {
+    func goToHome() -> some View {
+        return SignInViewRouter.makeHomeView()
+    }
+    
+    func goToSignUp() -> some View {
+        return SignInViewRouter.makeSignUpView()
+    }
 }
